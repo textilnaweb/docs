@@ -6,10 +6,10 @@ Esta referência ajuda a implementar a API RESTful TextilNaWeb v1. Esta API usa 
 
 Esta disponível 2 ambientes de api da textilnaweb. Sendo o `production` e o `sandbox`.
 
-| Ambiente       | Endpoint                        |
-|:--------------:|:--------------------------------|
-| **production** | https://api.textilnaweb.com     |
-| **sandbox**    | https://apibeta.textilnaweb.com |
+|     | Ambiente       | Endpoint                        |
+|:---:|:--------------:|:--------------------------------|
+| <img src="https://raw.githubusercontent.com/textilnaweb/assets/main/images/icons/www.svg" width="30"> | **production** | https://api.textilnaweb.com     |
+| <img src="https://raw.githubusercontent.com/textilnaweb/assets/main/images/icons/labs.svg" width="30"> | **sandbox**    | https://apibeta.textilnaweb.com |
 
 ## SDKs
 
