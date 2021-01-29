@@ -1,0 +1,25 @@
+# Referência da API
+
+Esta referência ajuda a implementar a API RESTful TextilNaWeb v1. Esta API usa um formato JSON para saída e é capaz de lidar com solicitações CORS (Cross-Origin Resource Sharing). A API não tem estado por isso todas as solicitações são validadas contra um token de API. O token da API pode ser obtido manualmente no aplicativo textilnaweb.com.
+
+## Endpoints
+
+Esta disponível 2 ambientes de api da textilnaweb. Sendo o `production` e o `sandbox`.
+
+| Ambiente       | Endpoint                        |
+|:--------------:|:--------------------------------|
+| **production** | https://api.textilnaweb.com     |
+| **sandbox**    | https://apibeta.textilnaweb.com |
+
+## SDKs
+
+Foi desenvolvido alguns SDks, para auxiliar a implementação da API em seu projeto. Abaixo você pode verificar os projetos disponíveis:
+
+### NodeJS
+
+**tnw-sdk** projeto desenvolvido para implementação da API no ambiente nodejs (javascript).
+Para instalar:
+
+```bash
+$ npm install tnw-sdk
+```
