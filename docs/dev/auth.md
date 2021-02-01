@@ -12,13 +12,13 @@ Responsável por fazer o login de um usuário na estrutura
 
 #### Requisição
 
-| atributo  | descrição                              |
-|:----------|:---------------------------------------|
-| email     | E-mail do usuário                      |
-| senha     | Senha do usuário                       |
-| os        | Nome do sistema operacional do cliente |
-| navegador | Nome do navegador do cliente           |
-| ip        | IP da maquina do cliente               |
+| atributo  | descrição                                         |
+|:----------|:--------------------------------------------------|
+| email     | E-mail do usuário  <Badge text="obrigatório"/>    |
+| senha     | Senha do usuário  <Badge text="obrigatório"/>     |
+| os        | Nome do sistema operacional do cliente            |
+| navegador | Nome do navegador do cliente                      |
+| ip        | IP da maquina do cliente                          |
 
 #### Resposta
 
