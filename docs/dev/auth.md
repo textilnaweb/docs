@@ -5,7 +5,8 @@ Para isso vocÊ deve fazer o login na api que irá retornar um access_token.
 
 ### /login
 
-Endpoint: GET /auth/login
+<api method="get" uri="/auth/login" />
+
 
 Responsável por fazer o login de um usuário na estrutura
 
