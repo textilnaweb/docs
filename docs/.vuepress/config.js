@@ -11,12 +11,12 @@ module.exports = {
         docsDir: 'docs',
         editLinks: true,
         sidebar: [
-            '/',
-            '/api'
+            { title: "Guia", children: ["/main.md"] },
+            { title: "Desenvolvimento", children: ['/dev/', '/dev/auth.md', '/dev/erros.md'] }
         ],
         nav: [
             { text: 'Guia',     link: '/main.md' },
-            { text: 'Github',   link: 'https://github.com/textilnaweb/docs' }
+            { text: 'Netforce',   link: 'http://www.netforce.com.br' }
         ],
         footer: {
             contact: [
