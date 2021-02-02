@@ -11,7 +11,8 @@ Retorna o usuário logado pelo access_token.
 
 #### Requisição
 
-Somente deve ser executado essa rota sobre um access_token <Badge text="auth" type="error"/>
+Somente deve ser executado essa rota sobre um access_token <tag text="auth" type="error"/> xxxxx
+
 
 #### Resposta
 
