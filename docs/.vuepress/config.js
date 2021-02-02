@@ -20,7 +20,10 @@ module.exports = {
             { title: "Desenvolvimento", children: [
                 '/dev/', 
                 '/dev/auth.md', 
-                '/dev/erros.md'
+                '/dev/erros.md',
+                '/dev/favoritos.md',
+                '/dev/listas.md',
+                '/dev/produtos.md'
             ]} ,
         ],
         nav: [
