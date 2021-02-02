@@ -11,7 +11,7 @@ Retorna o usuário logado pelo access_token.
 
 #### Requisição
 
-Somente deve ser executado essa rota sobre um access_token <tag text="auth" type="error"/> xxxxx
+<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`
 
 
 #### Resposta
@@ -59,7 +59,7 @@ Responsável por encerrar uma token de acesso do usuário.
 
 #### Requisição
 
-Somente deve ser executado essa rota sobre um access_token <Badge text="auth" type="error"/>
+<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`
 
 #### Resposta
 
