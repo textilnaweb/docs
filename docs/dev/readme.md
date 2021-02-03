@@ -11,6 +11,20 @@ Esta disponível 2 ambientes de api da textilnaweb. Sendo o `production` e o `sa
 | <img src="https://raw.githubusercontent.com/textilnaweb/assets/main/images/icons/www.svg" width="30"> | **production** | https://api.textilnaweb.com     |
 | <img src="https://raw.githubusercontent.com/textilnaweb/assets/main/images/icons/labs.svg" width="30"> | **sandbox**    | https://apibeta.textilnaweb.com |
 
+## Requisições
+
+Todas as requisições contra a API, devem conter, no mínimo, o cabeçalho abaixo para que o bom funcionamento da API seja executada.
+
+**Headers:**
+
+```json
+{
+    "Accept": "application/json",
+    "Cache-Control": "no-cache",
+    "Content-Type": "application/json", // quando for o caso
+}
+```
+
 ## SDKs
 
 Foi desenvolvido alguns SDks, para auxiliar a implementação da API em seu projeto. Abaixo você pode verificar os projetos disponíveis:

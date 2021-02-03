@@ -38,7 +38,7 @@ Parâmetros query:
 | ordenacao            | Ordem que os produtos serão exibidos                               |
 | cols                 | Número de colunas que será exibido os produtos                     |
 | count                | Quantidade de produtos encontrado com base no filtro sem paginação |
-| produtos             | Lista de produtos encontrado. **Ver [produto](/dev/produto.html)** |
+| produtos             | Lista de produtos encontrado. [Ver produto](/dev/produtos.html) |
 | exibir               | Sub objeto                                                         |
 | exibir.barra_filtros | Flag que determina se deve exibir a barra de filtros               |
 | exibir.ordenacao     | Flag que determina se deve exibir as opções de ordenação           |
