@@ -1,7 +1,7 @@
 # Autenticação
 
 Para ser utilizado a api com rotas privadas, vocÊ deve acessa-las utilizando um token de usuário. 
-Para isso vocÊ deve fazer o login na api que irá retornar um access_token.
+Para isso você deve fazer o login na api que irá retornar um access_token.
 
 ### Usuário
 
@@ -113,7 +113,7 @@ Em formato JSON
 |:-------------|:-----------------------------------------------------------------------|
 | status       | true                                                                   |
 
-### Reiniciar senha/Trocar se denha
+### Reiniciar senha/Trocar senha
 
 <api method="post" uri="/auth/reiniciar-senha" />
 

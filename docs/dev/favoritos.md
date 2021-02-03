@@ -1,6 +1,6 @@
 # Favoritos
 
-O usuário pode ser uma lista de produtos favoritos na loja, para isso pode ser utilizado os comandos abaixo:
+O usuário pode ter uma lista de produtos favoritos na loja, para isso pode ser utilizado os comandos abaixo:
 
 ### Listar produtos de favoritos
 

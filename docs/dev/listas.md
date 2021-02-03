@@ -1,11 +1,12 @@
 # Listas de produtos
 
-Busca no sistema por listas de produtos, algumas listas padrões estão disponíveis:
+Busca no sistema por produtos através de listas de pordutos pré-definidas.
+Abaixo temos algumas listas padrões que já estão disponíveis:
 
- - busca
- - lancamentos
- - ofertas 
- - historico_navegacao
+ - **busca** - Lista utilizada para realizar buscas na loja
+ - **lancamentos** - Lista de produtos para exibir os produtos rescém lançados na loja
+ - **ofertas** - Lista de produtos que estão com promoções/ofertas ativas
+ - **historico_navegacao** - Lista de produtos do usuário ou tracker_token referênte a navegação pelos últimos produtos
 
 ### Retorna a lista de produtos
 
@@ -37,7 +38,7 @@ Parâmetros query:
 | ordenacao            | Ordem que os produtos serão exibidos                               |
 | cols                 | Número de colunas que será exibido os produtos                     |
 | count                | Quantidade de produtos encontrado com base no filtro sem paginação |
-| produtos             | Lista de produtos encontrado. Ver [produto](/produto)              |
+| produtos             | Lista de produtos encontrado. **Ver [produto](/dev/produto.html)** |
 | exibir               | Sub objeto                                                         |
 | exibir.barra_filtros | Flag que determina se deve exibir a barra de filtros               |
 | exibir.ordenacao     | Flag que determina se deve exibir as opções de ordenação           |
