@@ -23,19 +23,14 @@ module.exports = {
                 '/dev/erros.md',
                 '/dev/favoritos.md',
                 '/dev/listas.md',
-                '/dev/produtos.md'
+                '/dev/produtos.md',
+                'dev/utils.html'
             ]} ,
         ],
         nav: [
             { text: 'Guia',             link: '/main.md' },
             { text: 'NetForce',         link: 'http://www.netforce.com.br' },
             { text: 'Fischer Têxtil',   link: 'https://www.fischertextil.com.br/' }
-        ],
-        footer: {
-            contact: [
-                { type: 'github',   link: 'https://github.com/gabrielwillemann/' },
-                { type: 'twitter',  link: 'https://twitter.com/gabrielwilleman' }
-            ],
-        }
+        ]
     }
  }
