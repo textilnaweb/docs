@@ -27,7 +27,13 @@ Todas as requisições contra a API, devem conter, no mínimo, o cabeçalho abai
 
 ## SDKs
 
-Foi desenvolvido alguns SDks, para auxiliar a implementação da API em seu projeto. Abaixo você pode verificar os projetos disponíveis:
+Foi desenvolvido alguns SDks, para auxiliar a implementação da API em seu projeto.
+
+### Definição dos SDKs:
+
+[Veja aqui](/dev/sdk.html)
+
+Abaixo você pode verificar os projetos disponíveis:
 
 ### NodeJS
 
