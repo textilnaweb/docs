@@ -3,20 +3,20 @@
 O sistema disponibiliza algumas funções de utilizade geral, para atender algumas necessidades específicas.
 Abaixo segue uma lista dessas funções:
  
-### CEP - Buscar informações
+## CEP - Buscar informações
 
 <api method="get" uri="/utils/cep/{cep}" />
 
 Retorna um objeto com as informações de localkização do cep, tal como pais, estado e municipio.
 
-#### Requisição
+### Requisição
 
 | parametro  | descrição                                     |
 |:-----------|:----------------------------------------------|
 | cep        | Número e somente números do cep que se pretende buscar <Badge text="obrigatório"/> |
 
 
-#### Resposta
+### Resposta
 
 ```json
 {

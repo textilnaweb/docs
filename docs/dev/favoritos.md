@@ -2,17 +2,17 @@
 
 O usuário pode ter uma lista de produtos favoritos na loja, para isso pode ser utilizado os comandos abaixo:
 
-### Listar produtos de favoritos
+## Listar produtos de favoritos
 
 <api method="get" uri="/favoritos" />
 
 Retorna a lista de produtos marcados como favoritos do usuário.
 
-#### Requisição
+### Requisição
 
 <tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
 
-#### Resposta
+### Resposta
 
 Lista de `produto_id`
 
@@ -27,13 +27,13 @@ Exemplo:
 ```
 
 
-### Marcar como favorito
+## Marcar como favorito
 
 <api method="put" uri="/favoritos/{pid}" />
 
 Marcar produto id como favorito para o usuário logado
 
-#### Requisição
+### Requisição
 
 <tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
 
@@ -41,7 +41,7 @@ Marcar produto id como favorito para o usuário logado
 |:-----------|:----------------------------------------------|
 | pid        | ID do produto que será marcado como favorito <Badge text="obrigatório"/> |
 
-#### Resposta
+### Resposta
 
 Retorna a nova lista de favoritos do usuário, agora contendo o produto rescém marcado.
 
@@ -56,13 +56,13 @@ Exemplo:
 ]
 ```
 
-### Desmarcando o produto como favorito
+## Desmarcando o produto como favorito
 
 <api method="delete" uri="/favoritos/{pid}" />
 
 Desmarcar um produto id da lista de produtos favoritos do usuário logado.
 
-#### Requisição
+### Requisição
 
 <tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`
 
@@ -70,7 +70,7 @@ Desmarcar um produto id da lista de produtos favoritos do usuário logado.
 |:-----------|:----------------------------------------------|
 | pid        | ID do produto que será desmarcado como favorito <Badge text="obrigatório"/> |
 
-#### Resposta
+### Resposta
 
 Retorna a nova lista de favoritos do usuário, agora sem o produto rescém desmarcado.
 

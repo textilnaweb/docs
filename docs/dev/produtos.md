@@ -2,20 +2,20 @@
 
 Carregar informações detalhadas de um produto específico.
 
-### Carregar produto
+## Carregar produto
 
 <api method="get" uri="/produtos/{pid}" />
 
 Carregar o detalhe de um produto.
 
-#### Requisição
+### Requisição
 
 | parametro  | descrição                                     |
 |:-----------|:----------------------------------------------|
 | pid        | ID do produto <Badge text="obrigatório"/> |
 
 
-#### Resposta
+### Resposta
 
 Detalhe do produto:
 

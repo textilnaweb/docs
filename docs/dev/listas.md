@@ -8,13 +8,13 @@ Abaixo temos algumas listas padrões que já estão disponíveis:
  - **ofertas** - Lista de produtos que estão com promoções/ofertas ativas
  - **historico_navegacao** - Lista de produtos do usuário ou tracker_token referênte a navegação pelos últimos produtos
 
-### Retorna a lista de produtos
+## Retorna a lista de produtos
 
 <api method="get" uri="/listas/{lid}" />
 
 Retorna a lista de produtos marcados como favoritos do usuário.
 
-#### Requisição
+### Requisição
 
 | parametro  | descrição                                     |
 |:-----------|:----------------------------------------------|
@@ -29,7 +29,7 @@ Parâmetros query:
 | p          | Qual o indice da página                       |
 
 
-#### Resposta
+### Resposta
 
 | atributo             | descrição                                                          |
 |:---------------------|:-------------------------------------------------------------------|

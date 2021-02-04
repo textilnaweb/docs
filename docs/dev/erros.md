@@ -17,7 +17,7 @@ Sempre será retorna dentro de um subobjeto `error` e dentro dele teremos sempre
 
 > O subobjeto `error` poderá ter outros atributos além do id e data, mas isso pode mudar conforma cada erro.
 
-### Estrutura do objeto Error
+## Estrutura do objeto Error
 
 | atributo | descrição |
 |---|---|

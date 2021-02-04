@@ -3,17 +3,17 @@
 Para ser utilizado a api com rotas privadas, vocÊ deve acessa-las utilizando um token de usuário. 
 Para isso você deve fazer o login na api que irá retornar um access_token.
 
-### Usuário
+## Usuário
 
 <api method="get" uri="/auth/usuario" />
 
 Retorna o usuário logado pelo access_token.
 
-#### Requisição
+### Requisição
 
 <tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
 
-#### Resposta
+### Resposta
 
 | atributo     | descrição                                    |
 |:-------------|:---------------------------------------------|
@@ -25,13 +25,13 @@ Retorna o usuário logado pelo access_token.
 | ultimo_senha | Data e hora que foi trocado a última senha   |
 
 
-### Login
+## Login
 
 <api method="post" uri="/auth/login" />
 
 Responsável por fazer o login de um usuário na estrutura.
 
-#### Requisição
+### Requisição
 
 Em formato JSON
 
@@ -43,38 +43,38 @@ Em formato JSON
 | navegador | Nome do navegador do cliente                  |
 | ip        | IP da maquina do cliente                      |
 
-#### Resposta
+### Resposta
 
 | atributo     | descrição                                                |
 |:-------------|:---------------------------------------------------------|
 | access_token | Código do access token par aser usando nas apis privadas |
 
 
-### Logout
+## Logout
 
 <api method="post" uri="/auth/logout" />
 
 Responsável por encerrar uma token de acesso do usuário.
 
-#### Requisição
+### Requisição
 
 <tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`
 
-#### Resposta
+### Resposta
 
 | atributo     | descrição                                                |
 |:-------------|:---------------------------------------------------------|
 | status       | true                                                     |
 
 
-### Esqueci a senha
+## Esqueci a senha
 
 <api method="post" uri="/auth/esqueci-senha" />
 
 Quando o usuário não lembra a sua senha, ele pode solicitar um token de autorização para que ele possa trocar a sua senha.
 Para isso ele precisa informar o seu e-mail cadastrado que o sistema irá enviar um e-mail com o token de autorização para que a troca possa ser realizada.
 
-#### Requisição
+### Requisição
 
 Em formato JSON
 
@@ -84,7 +84,7 @@ Em formato JSON
 | url       | URL para onde o clique no e-mail irá redirecionar. Ex.: https://www.olamundo.com/auth/$token$ <Badge text="obrigatório"/>  |
 | notificar | Meio que será utilizado para notificar o usuário: `email` ou `sms`  |
 
-#### Resposta
+### Resposta
 
 | atributo     | descrição                                                              |
 |:-------------|:-----------------------------------------------------------------------|
@@ -92,13 +92,13 @@ Em formato JSON
 | protocolo    | Protocolo da notificação, para que possa ser re-enviada para o usuário |
 
 
-### Esqueci a senha (Re-notificar)
+## Esqueci a senha (Re-notificar)
 
 <api method="post" uri="/auth/esqueci-senha/notificar" />
 
 Após ter solicitado um token de autorização para trocar a senha, o sistema retorna o protocolo da notificação. Caso o usuário diga que não recebeu, através desse protocolo é possivel re-enviar o token de autorização. Pode ser feito pelo mesmo meio solicitado originalmente ou por outro, se necessário.
 
-#### Requisição
+### Requisição
 
 Em formato JSON
 
@@ -107,19 +107,19 @@ Em formato JSON
 | protocolo | Código de protocolo retornado na solicitação de troc de senha <Badge text="obrigatório"/> |
 | notificar | Meio que será utilizado para notificar o usuário: `email` ou `sms`                        |
 
-#### Resposta
+### Resposta
 
 | atributo     | descrição                                                              |
 |:-------------|:-----------------------------------------------------------------------|
 | status       | true                                                                   |
 
-### Reiniciar senha/Trocar senha
+## Reiniciar senha/Trocar senha
 
 <api method="post" uri="/auth/reiniciar-senha" />
 
 Com um token de autorização em mãos para trocar de senha, você pode executar este comando para trocar a sua senha.
 
-#### Requisição
+### Requisição
 
 Em formato JSON
 
@@ -128,7 +128,7 @@ Em formato JSON
 | token     | Token de autorização para trocar a senha recebido por e-mail ou sms <Badge text="obrigatório"/> |
 | senha     | Sua nova senha <Badge text="obrigatório"/>                                                      |
 
-#### Resposta
+### Resposta
 
 | atributo     | descrição                                                              |
 |:-------------|:-----------------------------------------------------------------------|
