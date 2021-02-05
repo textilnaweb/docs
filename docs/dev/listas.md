@@ -64,8 +64,30 @@ Lista de etiquetas
 | atributo             | descrição                                                          |
 |:---------------------|:-------------------------------------------------------------------|
 | id                   | ID da etiqueta                                                     |
-| nome                 | Nome da descritivo da etiqueta                                     |
+| nome                 | Nome descritivo da etiqueta                                        |
 | slug                 | Slug para ser utilizado nas rotas                                  |
 | logos                | Sub objeto                                                         |
 | logos.fabrica        | URI da logo da fábrica                                             |
 | logos.etiqueta       | URI da logo da etiqueta específica                                 |
+
+## Lista de departamentos
+
+<api method="get" uri="/listas/departamentos" />
+
+Retorna a lista de departamentos ativos na loja.
+
+### Requisição
+
+Nenhum parâmetro precisa ser passado
+
+
+### Resposta
+
+Lista de departamentos
+
+| atributo             | descrição                                                          |
+|:---------------------|:-------------------------------------------------------------------|
+| id                   | ID do departamento                                                 |
+| nome                 | Nome descritivo do departamento                                    |
+| slug                 | Slug para ser utilizado nas rotas                                  |
+| logo                 | URI da logo do departamento                                        |
