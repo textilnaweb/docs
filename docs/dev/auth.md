@@ -15,14 +15,25 @@ Retorna o usuário logado pelo access_token.
 
 ### Resposta
 
-| atributo     | descrição                                    |
-|:-------------|:---------------------------------------------|
-| id           | ID do usuário no sistema                     |
-| nome         | Nome completo do usuário                     |
-| apelido      | Nome curto do usuário                        |
-| email        | E-mail do usuário para acessar o sistema     |
-| ultimo_login | Data e hora que foi realizado o último login |
-| ultimo_senha | Data e hora que foi trocado a última senha   |
+| atributo                  | descrição                                    |
+|:--------------------------|:---------------------------------------------|
+| id                        | ID do usuário no sistema                     |
+| nome                      | Nome completo do usuário                     |
+| apelido                   | Nome curto do usuário                        |
+| email                     | E-mail do usuário para acessar o sistema     |
+| ultimo_login              | Data e hora que foi realizado o último login |
+| ultimo_senha              | Data e hora que foi trocado a última senha   |
+| localidade                | Objeto do local do usuário                   |
+| localidade.cep            | CEP do usuário                               |
+| localidade.pais           | Objeto do pais do usuário                    |
+| localidade.pais.id        | ID do pais                                   |
+| localidade.pais.iso3      | Codigo ISO3 do pais                          |
+| localidade.estado         | Objeto do estado do usuário                  |
+| localidade.estado.id      | ID do estado                                 |
+| localidade.estado.sigla   | Sigla do estado                              |
+| localidade.municipio      | Objeto do municipio do usuário               |
+| localidade.municipio.id   | ID do municipio                              |
+| localidade.municipio.nome | Nome do municipio                            |
 
 
 ## Login
