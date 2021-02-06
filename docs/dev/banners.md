@@ -11,6 +11,11 @@ Controle de banners da loja.
 |:-----------|:---------------------------------------------------------------|
 | categoria  | ID da categoria/coleção de banners <Badge text="obrigatório"/> |
 
+Algumas categorias do projeto:
+
+ - **mini** - banners estreitos
+ - **home** - banners para o carrosel da home
+
 
 ### Resposta
 
