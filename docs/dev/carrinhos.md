@@ -1,7 +1,19 @@
 # Carrinhos
 
-Na hora do usuáiro estar comprandos os produtos na loja o mesmo poderá ter vários carrinho abertos. Isso por que a loja é estruturada para que seja um carrinho por coleção de cada empresa.
+Na hora do usuário estar comprandos os produtos na loja o mesmo poderá ter vários carrinho abertos. Isso por que a loja é estruturada para que seja um carrinho por coleção de cada fábrica.
 Abaixo estamos relacionando as ações para manipular o carrinho.
+
+## Tokens de Sessão
+
+O lado do client é que deve controlar a sessão do usuário aberta, para determinar quanto tempo o carrinho poderá ficar aberto. Para isso o client, deverá gerar um token utilizando UUID e sempre que precisar adicionar ou remover um produto no carrinho, esse token deverá ser fornecido.
+
+### Exemplo de token de sessão
+
+```json
+{
+    "token": "218eef8cb4204d138de187773f901129"
+}
+```
 
 ## Listar carrinhos
 
