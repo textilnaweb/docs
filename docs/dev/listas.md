@@ -25,7 +25,7 @@ Abaixo temos a listas padrões que já estão disponíveis:
 
 Parâmetros query:
 
-| parametro  | descrição                                     |
+| query      | descrição                                     |
 |:-----------|:----------------------------------------------|
 | q          | Texto de busca para filotros os produtos      |
 | s          | Qtdade de produtos por página. Padrão 20      |

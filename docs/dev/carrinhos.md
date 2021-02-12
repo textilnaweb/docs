@@ -23,7 +23,7 @@ Retorna a lista de carrinhos abertos na sessão do usuário.
 
 ### Requisição
 
-Em formato JSON
+Parâmetros query:
 
 | query     | descrição                                                     |
 |:----------|:--------------------------------------------------------------|

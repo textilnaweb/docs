@@ -12,8 +12,15 @@ Carregar o detalhe de um produto.
 
 | parametro  | descrição                                     |
 |:-----------|:----------------------------------------------|
-| pid        | ID do produto <Badge text="obrigatório"/> |
+| pid        | ID do produto <Badge text="obrigatório"/>     |
 
+Parâmetros query:
+
+| query      | descrição                                               |
+|:-----------|:--------------------------------------------------------|
+| sessao_id  | ID da sessao para ser registrado nos produtos visitados |
+
+> Você pode ver detalhes do token de sessão [aqui](/dev/carrinhos.html#tokens-de-sessao)
 
 ### Resposta
 
