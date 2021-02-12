@@ -28,7 +28,8 @@ module.exports = {
                 '/dev/listas.md',
                 '/dev/produtos.md',
                 '/dev/carrinhos.md',
-                'dev/utils.html'
+                '/dev/banners.md',
+                '/dev/utils.html'
             ]} ,
         ],
         nav: [
