@@ -1,6 +1,9 @@
 module.exports = {
     title: 'Têxtil na Web',
     description: 'Documentação e helpers do portal Têxtil na Web.',
+    head: [
+        ['link', { rel: "shortcut icon", href: "https://static.textilnaweb.com/imgs/favicon.png"}],
+    ],
     locales: {
         '/': {
             lang: 'pt-BR',
