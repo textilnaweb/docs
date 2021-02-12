@@ -39,3 +39,30 @@ Retorna um objeto com as informações de localkização do cep, tal como pais, 
   }
 }
 ```
+
+## NewsLetter - registrar e-mail
+
+<api method="post" uri="/utils/newsletter" />
+
+Registrar um novo e-mail na lista de newsletter do projeto.
+
+### Requisição
+
+Em formato JSON
+
+| atributo  | descrição                                                                   |
+|:----------|:----------------------------------------------------------------------------|
+| sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/>               |
+| email     | E-mail a ser rewgistrado na lista de newsletter <Badge text="obrigatório"/> |
+
+### Resposta
+
+Após registrado o e-mail na lista de newsletter, será retornado o status de ok.
+
+Exemplo: 
+
+```json
+{
+    "status": true
+}
+```
