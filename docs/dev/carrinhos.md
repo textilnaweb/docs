@@ -25,7 +25,7 @@ Retorna a lista de carrinhos abertos na sessão do usuário.
 
 Em formato JSON
 
-| atributo  | descrição                                                     |
+| query     | descrição                                                     |
 |:----------|:--------------------------------------------------------------|
 | sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/> |
 
