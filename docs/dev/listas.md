@@ -4,47 +4,41 @@ O sistema foi implementado por controle de listas e é através delas que vocÊ 
 
 ## Lista de produtos
 
-<api method="get" uri="/listas/{lid}" />
+<api method="get" uri="/listas/produtos" />
 
-Retorna a lista de produtos marcados como favoritos do usuário.
-
-A busca no sistema por produtos, deve ser realizada através de listas de produtos pré-definidas.
-Abaixo temos a listas padrões que já estão disponíveis:
-
- - **busca** - Lista utilizada para realizar buscas na loja
- - **lancamentos** - Lista de produtos para exibir os produtos rescém lançados na loja
- - **ofertas** - Lista de produtos que estão com promoções/ofertas ativas
- - **historico_navegacao** - Lista de produtos do usuário ou tracker_token referênte a navegação pelos últimos produtos
+Retorna a lista de produtos conforme os filtros, ordenação e paginação.
 
 
 ### Requisição
 
-| parametro  | descrição                                     |
-|:-----------|:----------------------------------------------|
-| lid        | ID da lista que será carregada <Badge text="obrigatório"/> |
 
 Parâmetros query:
 
 | query      | descrição                                     |
 |:-----------|:----------------------------------------------|
-| q          | Texto de busca para filotros os produtos      |
-| s          | Qtdade de produtos por página. Padrão 20      |
+| q          | Texto de busca para filtrar os produtos       |
 | p          | Qual o indice da página                       |
+| qtd        | Qtdade de produtos por página. Padrão 20      |
+| ordem      | Qual a classificação de ordenação             |
+| filtros    | Lista de filtro pré-definidos                 |
+
+
+#### Pré filtros
+A busca no sistema por produtos, pode ser realizada através de filtros de produtos pré-definidas.
+Abaixo temos os filtros padrões que já estão disponíveis:
+
+ - **lancamentos** - Lista de produtos para exibir os produtos rescém lançados na loja.
+ - **ofertas** - Lista de produtos que estão com promoções/ofertas ativas.
+ - **historico_navegacao** - Lista de produtos do usuário ou tracker_token referênte a navegação pelos últimos produtos.
+ - **favoritos** - Lista de produtos marcados como favoritos para o usuário logado.
 
 
 ### Resposta
 
 | atributo             | descrição                                                          |
 |:---------------------|:-------------------------------------------------------------------|
-| nome                 | ID da lista                                                        |
-| titulo               | Título a ser exibido da lista                                      |
-| ordenacao            | Ordem que os produtos serão exibidos                               |
-| cols                 | Número de colunas que será exibido os produtos                     |
 | count                | Quantidade de produtos encontrado com base no filtro sem paginação |
-| produtos             | Lista de produtos encontrado. [Ver produto](/dev/produtos.html) |
-| exibir               | Sub objeto                                                         |
-| exibir.barra_filtros | Flag que determina se deve exibir a barra de filtros               |
-| exibir.ordenacao     | Flag que determina se deve exibir as opções de ordenação           |
+| produtos             | Lista de produtos encontrado. [Ver produto](/dev/produtos.html)    |
 
 ## Lista de etiquetas/marcas
 
