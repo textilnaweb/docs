@@ -23,8 +23,11 @@ Parâmetros query:
 | filtros        | Lista de filtro pré-definidos                                                                                                |
 | _marcas        | Lista de etiquetas (slug)                                                                                                    |
 | _departamentos | Lista de departamentos (slug)                                                                                                |
+| sessao_id      | Token da sessao do usuário no front-end. Para ser usando na lista de histórico de vanegação por exemplo                      |
 
 > As listas, de marcas, departamentos, filtros, pode ser informado um único item ou uma lista separada por vírgula.
+
+<tag text="auth" type="error"/> Quando executado sobre um `access_token`, alguns filtros do usuáiro logado são aplicados.
 
 
 #### Pré filtros
