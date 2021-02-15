@@ -44,7 +44,7 @@ Exemplo:
 
 ## Adicionar/Atualizar produto no carrinho
 
-<api method="post" uri="/carrinhos/{produto}" />
+<api method="put" uri="/carrinhos/{produto}" />
 
 Adicionar ou atualizar produto em um carrinho aberto.
 
@@ -140,6 +140,37 @@ Em formato JSON
 ### Resposta
 
 Será removido dos carrinhos abertos todos os produtos e retornado o status ok.
+
+Exemplo: 
+
+```json
+{
+    "status": true
+}
+```
+
+## Fechar carrinho
+
+<api method="post" uri="/carrinhos" />
+
+Fechar/finalizar o pré-pedido e transforma-lo em pedido aguardando a confirmação da fábrica.
+
+### Requisição
+
+Em formato JSON
+
+| atributo  | descrição                                                          |
+|:----------|:-------------------------------------------------------------------|
+| sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/>      |
+
+| query      | descrição                                                                                                             |
+|:-----------|:----------------------------------------------------------------------------------------------------------------------|
+| ids        | Lista de ids dos carrinho que pretende fechar. Quando não informado, será fechado todos os pedidos abertos da sessão. |
+
+
+### Resposta
+
+Após finalizar todos os pedidos abertos da sessão ou da lista informada, será retornado o status de ok.
 
 Exemplo: 
 
