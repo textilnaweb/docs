@@ -14,13 +14,17 @@ Retorna a lista de produtos conforme os filtros, ordenação e paginação.
 
 Parâmetros query:
 
-| query      | descrição                                     |
-|:-----------|:----------------------------------------------|
-| q          | Texto de busca para filtrar os produtos       |
-| p          | Qual o indice da página                       |
-| qtd        | Qtdade de produtos por página. Padrão 20      |
-| ordem      | Qual a classificação de ordenação             |
-| filtros    | Lista de filtro pré-definidos                 |
+| query          | descrição                                                                                                                    |
+|:---------------|:-----------------------------------------------------------------------------------------------------------------------------|
+| q              | Texto de busca para filtrar os produtos                                                                                      |
+| p              | Qual o indice da página                                                                                                      |
+| qtd            | Qtdade de produtos por página. Padrão 20                                                                                     |
+| ordem          | Qual a classificação de ordenação. `menor_preco`, `maior_preco`, `ofertas`, `lancamentos`, `mais_vendidos`, `mais_populares` |
+| filtros        | Lista de filtro pré-definidos                                                                                                |
+| _marcas        | Lista de etiquetas (slug)                                                                                                    |
+| _departamentos | Lista de departamentos (slug)                                                                                                |
+
+> As listas, de marcas, departamentos, filtros, pode ser informado um único item ou uma lista separada por vírgula.
 
 
 #### Pré filtros
