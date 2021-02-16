@@ -1,6 +1,6 @@
 # Listas
 
-O sistema foi implementado por controle de listas e é através delas que vocÊ pode carregar produtos, etiquetas, fabricas....
+O sistema foi implementado por controle de listas e é através delas que você pode carregar produtos, etiquetas, fabricas....
 
 ## Lista de produtos
 
@@ -21,22 +21,23 @@ Parâmetros query:
 | qtd            | Qtdade de produtos por página. Padrão 20                                                                                     |
 | ordem          | Qual a classificação de ordenação. `menor_preco`, `maior_preco`, `ofertas`, `lancamentos`, `mais_vendidos`, `mais_populares` |
 | filtros        | Lista de filtro pré-definidos                                                                                                |
-| marcas        | Lista de etiquetas (slug)                                                                                                    |
-| departamentos | Lista de departamentos (slug)                                                                                                |
-| sessao_id      | Token da sessao do usuário no front-end. Para ser usando na lista de histórico de vanegação por exemplo                      |
+| marcas         | Lista de etiquetas (slug)                                                                                                    |
+| departamentos  | Lista de departamentos (slug)                                                                                                |
+| sessao_id      | Token da sessao do usuário no front-end. Para ser usando na lista de histórico de navegação por exemplo                      |
 
 > As listas, de marcas, departamentos, filtros, pode ser informado um único item ou uma lista separada por vírgula.
 
-<tag text="auth" type="error"/> Quando executado sobre um `access_token`, alguns filtros do usuáiro logado são aplicados.
+<tag text="auth" type="error"/> Quando executado sobre um `access_token`, alguns filtros do usuário logado são aplicados.
 
 
 #### Pré filtros
+
 A busca no sistema por produtos, pode ser realizada através de filtros de produtos pré-definidas.
 Abaixo temos os filtros padrões que já estão disponíveis:
 
  - **lancamentos** - Lista de produtos para exibir os produtos rescém lançados na loja.
  - **ofertas** - Lista de produtos que estão com promoções/ofertas ativas.
- - **historico_navegacao** - Lista de produtos do usuário ou tracker_token referênte a navegação pelos últimos produtos.
+ - **historico_navegacao** - Lista de produtos do usuário ou `sessao_id` referênte a navegação pelos últimos produtos.
  - **favoritos** - Lista de produtos marcados como favoritos para o usuário logado.
 
 

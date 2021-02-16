@@ -1,6 +1,6 @@
 # Autenticação
 
-Para ser utilizado a api com rotas privadas, vocÊ deve acessa-las utilizando um token de usuário. 
+Para ser utilizado a api com rotas privadas, você deve acessa-las utilizando um token de usuário. 
 Para isso você deve fazer o login na api que irá retornar um access_token.
 
 ## Usuário
