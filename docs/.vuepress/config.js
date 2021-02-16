@@ -22,6 +22,7 @@ module.exports = {
             ] },
             { title: "Desenvolvimento", children: [
                 '/dev/', 
+                '/dev/novo_usuario.md',
                 '/dev/auth.md', 
                 '/dev/erros.md',
                 '/dev/favoritos.md',
