@@ -21,8 +21,8 @@ Parâmetros query:
 | qtd            | Qtdade de produtos por página. Padrão 20                                                                                     |
 | ordem          | Qual a classificação de ordenação. `menor_preco`, `maior_preco`, `ofertas`, `lancamentos`, `mais_vendidos`, `mais_populares` |
 | filtros        | Lista de filtro pré-definidos                                                                                                |
-| _marcas        | Lista de etiquetas (slug)                                                                                                    |
-| _departamentos | Lista de departamentos (slug)                                                                                                |
+| marcas        | Lista de etiquetas (slug)                                                                                                    |
+| departamentos | Lista de departamentos (slug)                                                                                                |
 | sessao_id      | Token da sessao do usuário no front-end. Para ser usando na lista de histórico de vanegação por exemplo                      |
 
 > As listas, de marcas, departamentos, filtros, pode ser informado um único item ou uma lista separada por vírgula.
