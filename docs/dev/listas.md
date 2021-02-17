@@ -45,8 +45,29 @@ Abaixo temos os filtros padrões que já estão disponíveis:
 
 | atributo             | descrição                                                          |
 |:---------------------|:-------------------------------------------------------------------|
+| title                | Objeto com o title e parâmetros conforme a busca.                  |
 | count                | Quantidade de produtos encontrado com base no filtro sem paginação |
 | produtos             | Lista de produtos encontrado. [Ver produto](/dev/produtos.html)    |
+
+
+#### Exemplo de resposta:
+
+```json
+{
+    "title": {
+        "id": "busca",
+        "data": {
+            "q": "regata"
+        }
+    },
+    "count": 10,
+    "produtos": [
+        //....
+    ]
+}
+```
+
+
 
 ## Lista de etiquetas/marcas
 
