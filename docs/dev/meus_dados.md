@@ -91,3 +91,56 @@ O sistema irá fazer uma nova consulta pelo `cnpj` cadastrado do usuário logado
     }
 }
 ```
+
+## Trocar e-mail
+
+<api method="put" uri="/meus-dados/trocar-email" />
+
+Alterar e-mail do usuário logado.
+
+### Requisição
+
+<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
+
+Em formato JSON
+
+| atributo  | descrição                                     |
+|:----------|:----------------------------------------------|
+| novo      | Novo E-mail <Badge text="obrigatório"/>       |
+
+### Resposta
+
+O sistema irá fazer a troca do e-mail do usuário logado e responser o status ok:
+
+```json
+{
+	"status": true
+}
+```
+
+## Trocar senha
+
+<api method="put" uri="/meus-dados/trocar-senha" />
+
+Alterar senha do usuário logado, informando a senha atual e a nova senha.
+
+### Requisição
+
+<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
+
+Em formato JSON
+
+| atributo  | descrição                                                        |
+|:----------|:-----------------------------------------------------------------|
+| atual     | Senha atual do usuário logado. <Badge text="obrigatório"/>       |
+| nova      | Nova senha para ser substituida. <Badge text="obrigatório"/>     |
+
+### Resposta
+
+O sistema irá fazer a troca da senha do usuário logado e responser o status ok:
+
+```json
+{
+	"status": true
+}
+```
