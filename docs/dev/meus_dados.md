@@ -12,7 +12,7 @@ Retorna o json dos dados do usuário cadastrado e logado na loja.
 
 <tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
 
-## Resposta
+### Resposta
 
 Serão passadas as informações do usuário, empresa e endereço.
 
@@ -125,8 +125,6 @@ Pode ser alterado os dados do cliente, usuário e endereço, veja o exemplo abai
 ```
 
 ### Resposta
-
-## Resposta
 
 Serão passadas as informações do usuário, empresa e endereço, atualizados conforma os campos informados na requisição.
 
