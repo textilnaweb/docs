@@ -21,8 +21,8 @@ Exemplo:
 ```json
 {
   "usuario": {
-      "nome": "Nome do comprador",
-      "apelido": "Apelido",
+      "nome": "Razão Social da Empresa Ltda",
+      "apelido": "Minha marca",
       "email": "comprador@gmail.com",
       "fuso": -3,
       "lang": "pt_br",
@@ -89,6 +89,86 @@ O sistema irá fazer uma nova consulta pelo `cnpj` cadastrado do usuário logado
         "municipio": "BLUMENAU",
         "estado": "SC"
     }
+}
+```
+
+## Atualizar dados
+
+<api method="put" uri="/meus-dados" />
+
+### Requisição
+
+<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
+
+Pode ser alterado os dados do cliente, usuário e endereço, veja o exemplo abaixo os campos que podem ser alterados em cada nivel.
+
+```json
+{
+  "usuario": {
+      "apelido": "Minha marca",
+      "fuso": -3,
+      "lang": "pt_br"
+  },
+  "empresa": {
+      "ie": "",
+      "im": "",
+      "email_fin": "financeiro@gmail.com",
+      "email_nfe": "nfe@gmail.com",
+      "ddd": "47",
+      "telefone_com": "999991010",
+      "telefone_cel": "999991011"
+  },
+  "endereco": {
+    "referencia": "Na frente do shopping"
+  }
+}
+```
+
+### Resposta
+
+## Resposta
+
+Serão passadas as informações do usuário, empresa e endereço, atualizados conforma os campos informados na requisição.
+
+Exemplo:
+
+```json
+{
+  "usuario": {
+      "nome": "Razão Social da Empresa Ltda",
+      "apelido": "Minha marca",
+      "email": "comprador@gmail.com",
+      "fuso": -3,
+      "lang": "pt_br",
+  },
+  "empresa": {
+    "cnpj": "00000000000000",
+    "ie": "",
+    "im": "",
+    "data_fundacao": "2007-04-01",
+    "email_fin": "financeiro@gmail.com",
+    "email_nfe": "nfe@gmail.com",
+    "ddd": "47",
+    "telefone_com": "",
+    "telefone_cel": "999990000",
+  },
+  "endereco": {
+    "cep": "89032300",
+    "logradouro": "Teste",
+    "numero": "1855",
+    "complemento": "sala 1",
+    "bairro": "passo manso",
+    "pais_iso3": "bra",
+    "pais_id": "20a0cca108ee48d5a890e389352ca43d",
+    "estado_sigla": "sc",
+    "estado_id": "2a1863b1f53243f792b640ae8685b7b0",
+    "municipio_nome": "blumenau",
+    "municipio_id": "53b230479a9c40db95c9189674343c66",
+    "municipio_codigo": "4202404",
+    "referencia": null,
+    "created_at": "2021-02-16T03:47:50.000Z",
+    "updated_at": "2021-02-16T03:47:50.000Z"
+  }
 }
 ```
 
