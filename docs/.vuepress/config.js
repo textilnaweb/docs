@@ -28,6 +28,7 @@ module.exports = {
                 '/dev/listas.md',
                 '/dev/produtos.md',
                 '/dev/carrinhos.md',
+                '/dev/pedidos.md',
                 '/dev/favoritos.md',
                 '/dev/banners.md',
                 '/dev/erros.md',
