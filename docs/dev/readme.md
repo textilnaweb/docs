@@ -58,6 +58,18 @@ Para passar o token de acesso via query da requisição, você deve fazer da seg
 https://api.textilnaweb.com/auth/usuario?access_token=7oohcHfts4sMHhFPKZ8oRLqgf1SCOxfS4PWMzJOZaVTErlWbpo38YPYIZuiz
 ```
 
+## Sessão ID
+
+A sessão é ID é um token id único que serve para a api monitorar o uso do da api em alguns caso cujo o usuário não esta logado, mas que necessite o acompanhamento personalidado do usuario final. Como é o caso por exemplo de monitorarmos os produtos que um determinado usuário (logado ou não) navegou pelo site. Para isso utilizamos o `sessao_id`.
+
+A **sessão id**, deve ser gerada localmente e passada via header da requisição. Como o exemplo abaixo:
+
+```json
+{
+    "Sessao-Id": "6d42cHfts4sMHhFPKZ8oRLqgf1SCOxfS4PWMzJOZaVTErlWbpo38YPYIZuiz"
+}
+```
+
 ## SDKs
 
 Foi desenvolvido alguns SDks, para auxiliar a implementação da API em seu projeto.
