@@ -66,3 +66,25 @@ Exemplo:
     "status": true
 }
 ```
+
+## Gerar ID de Sessão
+
+<api method="get" uri="/utils/gerar-token-sessao" />
+
+Gerar um novo ID de sessão para ser usado no lado do client para acompanhar os movimento do usuário, mesmo não estando logado.
+
+### Requisição
+
+Nada
+
+### Resposta
+
+Gerar gerado um ID da sessão da interface.
+
+Exemplo: 
+
+```json
+{
+  "session_id": "5f2236284ef441ad84daeb8c8c35fcab"
+}
+```
