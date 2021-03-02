@@ -25,6 +25,39 @@ Todas as requisições contra a API, devem conter, no mínimo, o cabeçalho abai
 }
 ```
 
+## Rotas Autenticadas
+
+Para executar uma rota autenticada, deve ser informar um token de acesso (access_token) válido de um usuário registrado para que a rota possa funcionar corretamente. Caso a rota exige um token valido e não for passado ou o token informado não estiver válido o erro abaixo será retornado.
+
+```json
+{
+  "error": {
+    "id": "erro.auth.usuario.nao.logado",
+    "data": {}
+  }
+}
+```
+
+Para passar o token de acesso, pode ser feito de 2 formas:
+
+### Passando o token de acesso via header
+
+Para passar o token de acesso via header da requisição, você deve fazer da seguinte forma:
+
+```json
+{
+    "Authorization": "Bearer 7oohcHfts4sMHhFPKZ8oRLqgf1SCOxfS4PWMzJOZaVTErlWbpo38YPYIZuiz"
+}
+```
+
+### Passando o token de acesso via query
+
+Para passar o token de acesso via query da requisição, você deve fazer da seguinte forma:
+
+```
+https://api.textilnaweb.com/auth/usuario?access_token=7oohcHfts4sMHhFPKZ8oRLqgf1SCOxfS4PWMzJOZaVTErlWbpo38YPYIZuiz
+```
+
 ## SDKs
 
 Foi desenvolvido alguns SDks, para auxiliar a implementação da API em seu projeto.
