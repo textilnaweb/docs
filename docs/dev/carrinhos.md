@@ -23,9 +23,9 @@ Retorna a lista de carrinhos abertos na sessão do usuário.
 
 ### Requisição
 
-Parâmetros query:
+Parâmetros header:
 
-| query     | descrição                                                     |
+| header    | descrição                                                     |
 |:----------|:--------------------------------------------------------------|
 | sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/> |
 
@@ -163,8 +163,11 @@ Em formato JSON
 
 | atributo  | descrição                                                          |
 |:----------|:-------------------------------------------------------------------|
-| sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/>      |
 | tamanhos  | Objeto com a lista de cores e tamanhos <Badge text="obrigatório"/> |
+
+| header    | descrição                                                          |
+|:----------|:-------------------------------------------------------------------|
+| sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/>      |
 
 | parametro  | descrição                                                                 |
 |:-----------|:--------------------------------------------------------------------------|
@@ -208,9 +211,7 @@ Remover um produto do carrinho.
 
 ### Requisição
 
-Em formato JSON
-
-| atributo  | descrição                                                          |
+| header    | descrição                                                          |
 |:----------|:-------------------------------------------------------------------|
 | sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/>      |
 
@@ -238,9 +239,7 @@ Remove todos os produtos de todos os carrinhos abertos da sessão.
 
 ### Requisição
 
-Em formato JSON
-
-| atributo  | descrição                                                          |
+| header    | descrição                                                          |
 |:----------|:-------------------------------------------------------------------|
 | sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/>      |
 
@@ -264,9 +263,7 @@ Fechar/finalizar o pré-pedido e transforma-lo em pedido aguardando a confirmaç
 
 ### Requisição
 
-Em formato JSON
-
-| atributo  | descrição                                                          |
+| header    | descrição                                                          |
 |:----------|:-------------------------------------------------------------------|
 | sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/>      |
 

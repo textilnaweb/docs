@@ -16,7 +16,7 @@ Carregar o detalhe de um produto.
 
 Parâmetros query:
 
-| query      | descrição                                               |
+| header     | descrição                                               |
 |:-----------|:--------------------------------------------------------|
 | sessao_id  | ID da sessao para ser registrado nos produtos visitados |
 

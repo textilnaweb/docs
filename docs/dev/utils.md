@@ -52,8 +52,11 @@ Em formato JSON
 
 | atributo  | descrição                                                                   |
 |:----------|:----------------------------------------------------------------------------|
-| sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/>               |
 | email     | E-mail a ser rewgistrado na lista de newsletter <Badge text="obrigatório"/> |
+
+| header    | descrição                                                                   |
+|:----------|:----------------------------------------------------------------------------|
+| sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/>               |
 
 ### Resposta
 

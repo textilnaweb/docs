@@ -23,6 +23,9 @@ Parâmetros query:
 | filtros        | Lista de filtro pré-definidos                                                                                                |
 | marcas         | Lista de etiquetas (slug)                                                                                                    |
 | departamentos  | Lista de departamentos (slug)                                                                                                |
+
+| header         | desacrição |
+|:---------------|:-----------|
 | sessao_id      | Token da sessao do usuário no front-end. Para ser usando na lista de histórico de navegação por exemplo                      |
 
 > As listas, de marcas, departamentos, filtros, pode ser informado um único item ou uma lista separada por vírgula.

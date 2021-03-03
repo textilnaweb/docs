@@ -66,7 +66,7 @@ A **sessão id**, deve ser gerada localmente e passada via header da requisiçã
 
 ```json
 {
-    "Sessao-Id": "6d42cHfts4sMHhFPKZ8oRLqgf1SCOxfS4PWMzJOZaVTErlWbpo38YPYIZuiz"
+    "sessao_id": "6d42cHfts4sMHhFPKZ8oRLqgf1SCOxfS4PWMzJOZaVTErlWbpo38YPYIZuiz"
 }
 ```
 
