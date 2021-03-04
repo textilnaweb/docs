@@ -75,7 +75,12 @@ Exemplo:
   "colecao": {
     "id": "9a5520b205d843b68f626fb1c3bf5cdd",
     "nome": "Coleção modelo verão",
-    "slug": "colecao_modelo_verao"
+    "slug": "colecao_modelo_verao",
+    "pedido": {
+        "val_ped_min": 2000.00,
+        "val_parc_min": 500.00,
+        "prazo_medio_fat": 90
+    }
   },
   "parcelamento": {
     "parcelas_qtd": 4,
