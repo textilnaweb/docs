@@ -1,12 +1,24 @@
 # Pedidos
 
-No acompanhamento dos pedidos realizados o usuário poderá verificar os pedidos que estão em andamento (abertos) e os pedidos já finalizados (fechados).
+No acompanhamento dos pedidos realizados o usuário poderá verificar os pedidos que estão em andamento (abertos) e os pedidos já finalizaos (fechados).
+
+## Situações do pedido
+
+| situações | descrição                          |
+|:---------:|:-----------------------------------|
+| pre       | Pré-Pedido: Ainda não é pedido     |
+| agc       | Aguardando Confirmação da Fábrica  |
+| agf       | Aguardando Faturamento             |
+| age       | Aguardando Entrega                 |
+| con       | Concluído / Entrega                |
+| can       | Cancelado                          |
+
 
 ## Listar pedidos
 
 <api method="get" uri="/pedidos" />
 
-Retorna a lista de pedidos abrtos e fechados que estão associados ao usuário logado.
+Retorna a lista de pedidos aberos e fechados quye estão associados ao usuáiro logado.
 
 ### Requisição
 
