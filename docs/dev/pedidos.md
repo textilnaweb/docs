@@ -1,6 +1,6 @@
 # Pedidos
 
-No acompanhamento dos pedidos realizados o usuário poderá verificar os pedidos que estão em andamento (abertos) e os pedidos já finalizaos (fechados).
+No acompanhamento dos pedidos realizados o usuário poderá verificar os pedidos que estão em andamento (abertos) e os pedidos já finalizados (fechados).
 
 ## Listar pedidos
 
