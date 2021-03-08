@@ -12,7 +12,7 @@ Retorna a lista de produtos marcados como favoritos do usuário.
 
 | header         | descrição |
 |:---------------|:-----------|
-| sessao_id      | Token da sessao do usuário no front-end. Para ser usando na lista de histórico de navegação por exemplo                      |
+| sessao_id      | Token da sessao do usuário no front-end. |
 
 ### Resposta
 
@@ -43,7 +43,7 @@ Marcar produto id como favorito para o usuário logado
 
 | header         | desacrição |
 |:---------------|:-----------|
-| sessao_id      | Token da sessao do usuário no front-end. Para ser usando na lista de histórico de navegação por exemplo                      |
+| sessao_id      | Token da sessao do usuário no front-end. |
 
 ### Resposta
 
@@ -74,7 +74,7 @@ Desmarcar um produto id da lista de produtos favoritos do usuário logado.
 
 | header         | desacrição |
 |:---------------|:-----------|
-| sessao_id      | Token da sessao do usuário no front-end. Para ser usando na lista de histórico de navegação por exemplo                      |
+| sessao_id      | Token da sessao do usuário no front-end. |
 
 
 ### Resposta
