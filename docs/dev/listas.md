@@ -24,7 +24,7 @@ Parâmetros query:
 | marcas         | Lista de etiquetas (slug)                                                                                                    |
 | departamentos  | Lista de departamentos (slug)                                                                                                |
 
-| header         | desacrição |
+| header         | descrição |
 |:---------------|:-----------|
 | sessao_id      | Token da sessao do usuário no front-end. Para ser usando na lista de histórico de navegação por exemplo                      |
 
@@ -41,7 +41,7 @@ Abaixo temos os filtros padrões que já estão disponíveis:
  - **lancamentos** - Lista de produtos para exibir os produtos rescém lançados na loja.
  - **ofertas** - Lista de produtos que estão com promoções/ofertas ativas.
  - **historico_navegacao** - Lista de produtos do usuário ou `sessao_id` referênte a navegação pelos últimos produtos.
- - **favoritos** - Lista de produtos marcados como favoritos para o usuário logado.
+ - **favoritos** - Lista de produtos marcados como favoritos para o usuário logado. Informar `sessao_id`.
 
 
 ### Resposta

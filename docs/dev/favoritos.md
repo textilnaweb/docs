@@ -10,7 +10,9 @@ Retorna a lista de produtos marcados como favoritos do usuário.
 
 ### Requisição
 
-<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
+| header         | descrição |
+|:---------------|:-----------|
+| sessao_id      | Token da sessao do usuário no front-end. Para ser usando na lista de histórico de navegação por exemplo                      |
 
 ### Resposta
 
@@ -35,11 +37,13 @@ Marcar produto id como favorito para o usuário logado
 
 ### Requisição
 
-<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
-
 | parametro  | descrição                                     |
 |:-----------|:----------------------------------------------|
 | pid        | ID do produto que será marcado como favorito <Badge text="obrigatório"/> |
+
+| header         | desacrição |
+|:---------------|:-----------|
+| sessao_id      | Token da sessao do usuário no front-end. Para ser usando na lista de histórico de navegação por exemplo                      |
 
 ### Resposta
 
@@ -64,11 +68,14 @@ Desmarcar um produto id da lista de produtos favoritos do usuário logado.
 
 ### Requisição
 
-<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`
-
 | parametro  | descrição                                     |
 |:-----------|:----------------------------------------------|
 | pid        | ID do produto que será desmarcado como favorito <Badge text="obrigatório"/> |
+
+| header         | desacrição |
+|:---------------|:-----------|
+| sessao_id      | Token da sessao do usuário no front-end. Para ser usando na lista de histórico de navegação por exemplo                      |
+
 
 ### Resposta
 
