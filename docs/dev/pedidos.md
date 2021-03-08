@@ -6,7 +6,7 @@ No acompanhamento dos pedidos realizados o usuário poderá verificar os pedidos
 
 <api method="get" uri="/pedidos" />
 
-Retorna a lista de pedidos aberos e fechados quye estão associados ao usuáiro logado.
+Retorna a lista de pedidos abrtos e fechados que estão associados ao usuário logado.
 
 ### Requisição
 
