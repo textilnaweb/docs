@@ -32,7 +32,8 @@ module.exports = {
                 '/dev/favoritos.md',
                 '/dev/banners.md',
                 '/dev/erros.md',
-                '/dev/utils.html'
+                '/dev/utils.html',
+                '/dev/eventos_sendpulse.html'
             ]} ,
         ],
         nav: [
