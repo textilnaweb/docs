@@ -31,8 +31,11 @@ Quando a situação do pedido é alterada, o sistema dispara um evento contra es
     "numero": "132456789",
     "situacao": "con",
     "data_emissao": "2021-03-03T02:30:49.000Z",
+    "data_emissao_str": "03/03/2021 02:30",
     "qtdade_total": 120,
+    "qtdade_total_str": "120",
     "valor_total": 1540.00,
+    "valor_total_str": "1.540.00",
 
     "fabrica": {
         "nome": "Fabrica da Fabrica",
