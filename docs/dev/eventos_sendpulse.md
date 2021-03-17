@@ -27,20 +27,34 @@ Quando a situação do pedido é alterada, o sistema dispara um evento contra es
 
 ```json
 {
-    "id": "321654987"
+    "id": "321654987",
     "numero": "132456789",
-    "situacao": "entregue",
-    "...."
+    "situacao": "con",
+    "data_emissao": "2021-03-03T02:30:49.000Z",
+    "qtdade_total": 120,
+    "valor_total": 1540.00,
+
+    "fabrica": {
+        "nome": "Fabrica da Fabrica",
+        "logo_url": "https://...",
+        "slug": "fabrica",
+    },
+
+    "etiqueta": {
+        "nome": "Fabrica de Teste",
+        "logo_url": "https://...",
+        "slug": "marca_da_fabrica",
+    }
 }
 ```
 
 **Situações:**
 
- - **emitido** - O carrinho foi finalizado e o pedido foi emitido.
- - **aprovado** - A Fabrica recebeu o pedido e aceitou/aprovou.
- - **faturado** - Pedido foi faturado pela fábrica.
- - **entregue** - Pedido foi entregue ao cliente.
- - **cancelado** - Pedido foi cancelado, conforme justificativa informada.
+ - **agc** - Emitido: O carrinho foi finalizado e o pedido foi emitido.
+ - **agf** - Aprovado: A Fabrica recebeu o pedido e aceitou/aprovou.
+ - **age** - Faturado: Pedido foi faturado pela fábrica.
+ - **con** - Entregue: Pedido foi entregue ao cliente.
+ - **can** - Cancelado: Pedido foi cancelado, conforme justificativa informada.
 
 
  ## NewsLetter
