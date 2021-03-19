@@ -27,6 +27,7 @@ Quando a situação do pedido é alterada, o sistema dispara um evento contra es
 
 ```json
 {
+    "email": "fulano@teste.com",
     "id": "321654987",
     "numero": "132456789",
     "situacao": "con",
@@ -37,17 +38,16 @@ Quando a situação do pedido é alterada, o sistema dispara um evento contra es
     "valor_total": 1540.00,
     "valor_total_str": "1.540.00",
 
-    "fabrica": {
-        "nome": "Fabrica da Fabrica",
-        "logo_url": "https://...",
-        "slug": "fabrica",
-    },
+    "cliente_nome": "Cliente Ltda",
+    "cliente_apelido": "Marca do Cliente",
 
-    "etiqueta": {
-        "nome": "Fabrica de Teste",
-        "logo_url": "https://...",
-        "slug": "marca_da_fabrica",
-    }
+    "fabrica_nome": "Fabrica da Fabrica",
+    "fabrica_logo_url": "https://...",
+    "fabrica_slug": "fabrica",
+
+    "etiqueta_nome": "Fabrica de Teste",
+    "etiqueta_logo_url": "https://...",
+    "etiqueta_slug": "marca_da_fabrica",
 }
 ```
 
