@@ -77,6 +77,16 @@ Exemplo:
     "id": "9a5520b205d843b68f626fb1c3bf5cdd",
     "nome": "Coleção modelo verão",
     "slug": "colecao_modelo_verao",
+    "cores": {
+        "preto": {
+            "hex": "#000000",
+            "img_url": ""
+        },
+        "branco": {
+            "hex": "#ffffff",
+            "img_url": ""
+        }
+    },
     "pedido": {
         "val_ped_min": 2000.00,
         "val_parc_min": 500.00,
