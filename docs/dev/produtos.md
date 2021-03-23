@@ -70,7 +70,8 @@ Exemplo:
     "id": "604d5e73bbe04aaeb6171940ad94031b",
     "nome": "marca",
     "slug": "fabrica/marca",
-    "logo_url": "https://logodownload.org/wp-content/uploads/2020/01/dzarm-logo.png"
+    "logo_url": "https://logodownload.org/wp-content/uploads/2020/01/dzarm-logo.png",
+    "etiqueca_fabrica": false
   },
   "colecao": {
     "id": "9a5520b205d843b68f626fb1c3bf5cdd",
@@ -89,3 +90,5 @@ Exemplo:
   "fotos": []
 }
 ```
+
+> O flag **etiqueta.etiqueca_fabrica** determina se a etiqueta é a própria marca da fabrica. Para evitar logo duplicada.
