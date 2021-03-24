@@ -71,7 +71,7 @@ Exemplo:
     "nome": "marca",
     "slug": "fabrica/marca",
     "logo_url": "https://logodownload.org/wp-content/uploads/2020/01/dzarm-logo.png",
-    "etiqueca_fabrica": false
+    "etiqueta_fabrica": false
   },
   "colecao": {
     "id": "9a5520b205d843b68f626fb1c3bf5cdd",
