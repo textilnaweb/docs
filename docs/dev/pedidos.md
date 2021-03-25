@@ -143,3 +143,32 @@ Exemplo:
   }
 ]]
 ```
+
+## Atualizar pedidos
+
+<api method="put" uri="/pedidos/{pnum}/atualizar-status" />
+
+Atualizar status/situação do pedido.
+
+### Requisição
+
+<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
+
+### Resposta
+
+Exemplo: 
+
+```json
+{
+    "status"      : "age",
+    "nota_fiscal" : "123456",
+}
+```
+
+**Campos obrigatório condicionais**
+
+Para algumas situações alguns campso são obrigatório serem informados:
+
+ - **nota_fiscal** - Quando o status for **age**.
+ - **motivo** - Quando o status for **can**.
+ - **mojustificativativo** - Quando o status for **can**.
