@@ -52,7 +52,8 @@ Em formato JSON
 
 | atributo  | descrição                                                                   |
 |:----------|:----------------------------------------------------------------------------|
-| email     | E-mail a ser rewgistrado na lista de newsletter <Badge text="obrigatório"/> |
+| nome      | Nome a ser registrado na lista de newsletter <Badge text="obrigatório"/> |
+| email     | E-mail a ser registrado na lista de newsletter <Badge text="obrigatório"/> |
 
 | header    | descrição                                                                   |
 |:----------|:----------------------------------------------------------------------------|
