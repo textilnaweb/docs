@@ -19,7 +19,8 @@ Retorna o usuário logado pelo access_token.
 |:--------------------------|:---------------------------------------------|
 | id                        | ID do usuário no sistema                     |
 | nome                      | Nome completo do usuário                     |
-| apelido                   | Nome curto do usuário                        |
+| apelido                   | Como usuário quer ser chamado                |
+| nome_fantasia             | Nome curto/fantasia da empresa               |
 | email                     | E-mail do usuário para acessar o sistema     |
 | ultimo_login              | Data e hora que foi realizado o último login |
 | ultimo_senha              | Data e hora que foi trocado a última senha   |

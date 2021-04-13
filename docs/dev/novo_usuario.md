@@ -56,11 +56,14 @@ Exemplo de JSON de requisição:
 
 ```json
 {
+	"nome": "Seu nome completo",
+	"apelido": "Nomo quer ser chamado",
 	"email": "seu-email@gmail.com",
 	"senha": "123456",
-	"nome": "Seu nome completo",
 	"cnpj": "01001001000101",
+	"nome_fantasia": "Nome fantasia",
 	"ddd": "47",
+	"telefone": "999991010",
 	"celular": "999991010",
 	"data_fundacao": "2007-04-01",
 	"endereco": {
@@ -80,8 +83,9 @@ Após cadastrado será retornado um JSON com a confirmação do nome e e-mail ca
 
 ```json
 {
-	"email": "seu-email@gmail.com",
-	"nome": "Seu nome completo"
+	"email"  : "seu-email@gmail.com",
+	"nome"   : "Seu nome completo",
+	"apelido": "Como usuario quer ser chamado"
 }
 ```
 
@@ -105,7 +109,8 @@ Após confirmado o e-mail do cadastro, será retornado um JSON com o nome e e-ma
 
 ```json
 {
-	"email": "seu-email@gmail.com",
-	"nome": "Seu nome completo"
+	"email"  : "seu-email@gmail.com",
+	"nome"   : "Seu nome completo",
+    "apelido": "Como usuario quer ser chamado"
 }
 ```
