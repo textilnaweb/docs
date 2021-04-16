@@ -28,7 +28,7 @@ Retornando as informações conforme o exemplo abaixo:
 	"email": "seu-email@gmail.com",
 	"cnpj": "01001001000101",
 	"nome": "SUA RASAO SOCIAL LTDA",
-    "fantasia": "SEU NOME FANTASIA",
+    "nome_fantasia": "SEU NOME FANTASIA",
     "data_fundacao": "29/03/2007",
     "situacao": "ATIVA",
     "endereco": {
