@@ -24,6 +24,7 @@ Retorna o usuário logado pelo access_token.
 | email                     | E-mail do usuário para acessar o sistema     |
 | ultimo_login              | Data e hora que foi realizado o último login |
 | ultimo_senha              | Data e hora que foi trocado a última senha   |
+| validado                  | Se e-mail do usuário já foi validado         |
 | localidade                | Objeto do local do usuário                   |
 | localidade.cep            | CEP do usuário                               |
 | localidade.pais           | Objeto do pais do usuário                    |
