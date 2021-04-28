@@ -121,7 +121,12 @@ Pode ser alterado os dados do cliente, usuário e endereço, veja o exemplo abai
       "telefone_cel": "999991011"
   },
   "endereco": {
-    "referencia": "Na frente do shopping"
+      "cep": "89040000",
+      "logradouro": "Rua de teste",
+      "numero": "100",
+      "complemento": "Sala 2",
+      "bairro": "Centro",
+      "referencia": "Na frente do shopping"
   }
 }
 ```
