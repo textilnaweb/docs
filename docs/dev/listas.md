@@ -121,3 +121,4 @@ Lista de departamentos
 | nome                 | Nome descritivo do departamento                                    |
 | slug                 | Slug para ser utilizado nas rotas                                  |
 | logo                 | URI da logo do departamento                                        |
+| subitens             | Lista de sub-departamentos                                         |
