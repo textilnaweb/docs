@@ -37,11 +37,19 @@ Exemplo:
 
 ```json
 [
-[
   {
     "id": "f240b035a8134e51804f97994c5414a9",
     "numero": "210226873200",
     "situacao": "pre",
+    "cond_pagto": {
+      "id": "4290e43ac00f472c9dc31e7284298335",
+      "codigo": "001",
+      "nome": "30 dias",
+      "prazo_medio": 30,
+      "qtd_parcelas": 1,
+      "created_at": "2021-05-05T14:03:18.000Z",
+      "updated_at": "2021-05-05T14:03:18.000Z"
+    },
     "cliente": {},
     "fabrica": {
       "fuso": -3,
@@ -144,9 +152,18 @@ Exemplo:
           }
         }
       }
-    ]
+    ],
+    "condpagtos": [
+        {
+            "id": "4290e43ac00f472c9dc31e7284298335",
+            "codigo": "001",
+            "nome": "30 dias",
+            "prazo_medio": 30,
+            "qtd_parcelas": 1
+        }
+    ]    
   }
-]]
+]
 ```
 
 ## Adicionar/Atualizar produto no carrinho
@@ -246,6 +263,45 @@ Remove todos os produtos de todos os carrinhos abertos da sessão.
 ### Resposta
 
 Será removido dos carrinhos abertos todos os produtos e retornado o status ok.
+
+Exemplo: 
+
+```json
+{
+    "status": true
+}
+```
+
+## Atualizar informações do carrinho
+
+<api method="put" uri="/carrinhos/{id_carrinho}/atualizar" />
+
+Para atualizar algumas informações do carrinho, antes de fazer o checkout, vocÊ pode utilizar o metodo abaixo:
+
+### Requisição
+
+| header    | descrição                                                          |
+|:----------|:-------------------------------------------------------------------|
+| sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/>      |
+
+### Requisição
+
+Em formato JSON
+
+| atributo       | descrição                                                          |
+|:---------------|:-------------------------------------------------------------------|
+| cond_pagto_id  | ID da condição de pagamento                                        |
+
+| header    | descrição                                                          |
+|:----------|:-------------------------------------------------------------------|
+| sessao_id | ID da sessão do usuário no client <Badge text="obrigatório"/>      |
+
+| parametro   | descrição                                                                 |
+|:------------|:--------------------------------------------------------------------------|
+| id_carrinho | ID do carrinho <Badge text="obrigatório"/>                                |
+
+
+### Resposta
 
 Exemplo: 
 
