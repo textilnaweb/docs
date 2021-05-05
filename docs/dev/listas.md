@@ -104,7 +104,11 @@ Retorna a lista de departamentos ativos na loja.
 
 ### Requisição
 
-Nenhum parâmetro precisa ser passado
+Parâmetros query:
+
+| query          | descrição                                                                                                                    |
+|:---------------|:-----------------------------------------------------------------------------------------------------------------------------|
+| subitens       | Flag que determina se deve exibir os sub-departamentos (Padrão 1)                                                            |
 
 
 ### Resposta
