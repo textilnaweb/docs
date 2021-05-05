@@ -108,7 +108,7 @@ Parâmetros query:
 
 | query          | descrição                                                                                                                    |
 |:---------------|:-----------------------------------------------------------------------------------------------------------------------------|
-| subitens       | Flag que determina se deve exibir os sub-departamentos (Padrão 1)                                                            |
+| subitens       | Flag que determina se deve exibir os sub-departamentos (Padrão: `false`)                                                     |
 
 
 ### Resposta
