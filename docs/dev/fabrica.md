@@ -1,4 +1,6 @@
-# Pedidos
+# Fabrica
+
+# Pedidos da Fabrica
 
 No acompanhamento dos pedidos realizados o usuário poderá verificar os pedidos que estão em andamento (abertos) e os pedidos já finalizaos (fechados).
 
@@ -16,7 +18,7 @@ No acompanhamento dos pedidos realizados o usuário poderá verificar os pedidos
 
 ## Listar pedidos
 
-<api method="get" uri="/pedidos" />
+<api method="get" uri="/fabrica/pedidos" />
 
 Retorna a lista de pedidos aberos e fechados quye estão associados ao usuáiro logado.
 
@@ -37,7 +39,32 @@ Exemplo:
     "id": "f240b035a8134e51804f97994c5414a9",
     "numero": "210226873200",
     "situacao": "pre",
-    "cliente": {},
+    "cliente":  {
+      "id": "bc3ffb08088e4efea5007bcdbfb794xx",
+      "usuario_id": "fb939d05de4e47cfab2dc58c4271c6xx",
+      "cnpj": "00000000000000",
+      "nome_fantasia": "Textil na Web",
+      "ie": "",
+      "im": "",
+      "data_fundacao": "2007-04-01",
+      "email_fin": "fabrica@gmail.com",
+      "email_nfe": "fabrica2@gmail.com",
+      "ddd": "47",
+      "telefone_com": "999991010",
+      "telefone_cel": "999991212",
+      "ultima_compra": null,
+      "usuario": {
+        "fuso": -3,
+        "id": "fb939d05de4e47cfab2dc58c4271c66d",
+        "nome": "Textil na Web S/A",
+        "apelido": "TNW",
+        "email": "fabrica@gmail.com",
+        "situacao": "atv",
+        "lang": "pt_br",
+        "ultimo_login": "2021-02-17T06:59:08.000Z",
+        "ultimo_senha": "2021-02-22T19:11:00.000Z",
+      }
+    },
     "fabrica": {
       "fuso": -3,
       "logo": "https://api.netforcews.com/thumbnail/s3.sa-east-1/static.textilnaweb.com/logos/fabrica.png",
@@ -143,3 +170,32 @@ Exemplo:
   }
 ]]
 ```
+
+## Atualizar pedidos
+
+<api method="put" uri="/fabrica/pedidos/{pnum}/atualizar-status" />
+
+Atualizar status/situação do pedido.
+
+### Requisição
+
+<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
+
+### Resposta
+
+Exemplo: 
+
+```json
+{
+    "status"      : "age",
+    "nota_fiscal" : "123456",
+}
+```
+
+**Campos obrigatório condicionais**
+
+Para algumas situações alguns campso são obrigatório serem informados:
+
+ - **nota_fiscal** - Quando o status for **age**.
+ - **motivo** - Quando o status for **can**.
+ - **mojustificativativo** - Quando o status for **can**.
