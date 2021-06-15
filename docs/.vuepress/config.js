@@ -34,7 +34,8 @@ module.exports = {
                 '/dev/banners.md',
                 '/dev/erros.md',
                 '/dev/utils.html',
-                '/dev/eventos_sendpulse.html'
+                '/dev/eventos_sendpulse.html',
+                '/dev/fabrica.md',
             ]} ,
         ],
         nav: [
