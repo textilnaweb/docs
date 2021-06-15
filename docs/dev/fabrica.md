@@ -199,3 +199,39 @@ Para algumas situações alguns campso são obrigatório serem informados:
  - **nota_fiscal** - Quando o status for **age**.
  - **motivo** - Quando o status for **can**.
  - **mojustificativativo** - Quando o status for **can**.
+
+
+## Ações por situações do pedido
+
+Veja abaixo algumas ações que algumas situações do pedido estarão disponíveis no pedido
+
+### Aguardando Confirmação da Fábrica (agc)
+
+ - **Aceitar pedido** Quando a fábrica aceita a intensão do pedido do cliente. Neste caso a situação do pedido passa para **agf**.
+ - **Rejeitar pedido** Quando a fábrica não aceita a intensão do pedido do cliente. Neste caso a situação do pedido passa para **can**.
+
+### Aguardando Faturamento (agf)
+
+ - **Faturar pedido** Quando a fabrica faturar/emitir a nota do pedido, deve marcar o pedido como faturado, Neste caso a situação do pedido passa para **age**. Juntamente deve ser informado:
+    - **numero da nota fiscal** (nfe_numero)
+    - **data de emissao da nota fiscal** (nfe_emissao)
+    - **XML da nota fiscal (NFe)** (Arquivo xml)
+ - **Cancelar** Quando dá algum problema e a fábrica cancela o pedido. Neste caso a situação do pedido passa para **can**.
+
+### Aguardando Entrega (age) 
+
+ - **Entregou** Quando a fábrica identifica que o pedio pedido foi entregue no cliente. Neste casso a situação do pediso passa para **con**
+ - **Cancelar** Quando dá algum problema e a fábrica cancela o pedido. Neste caso a situação do pedido passa para **can**.
+
+### Concluido (con) 
+
+Não há ações nesta situação.
+
+### Cancelado (can)
+
+Não há ações nesta situação.
+
+Para ser cancelado um pedido deve ser informado:
+
+ - **motivo** (motivo) Opção do motivo do cancelamento. (Lista pré definida).
+ - **justificativa** (justificativa) Texto com a justificativa do cancelamento.
