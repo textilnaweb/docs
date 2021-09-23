@@ -161,7 +161,8 @@ Exemplo:
             "prazo_medio": 30,
             "qtd_parcelas": 1
         }
-    ]    
+    ],    
+    "data_min_para_entrega": "2021-10-23"
   }
 ]
 ```
@@ -288,9 +289,10 @@ Para atualizar algumas informações do carrinho, antes de fazer o checkout, voc
 
 Em formato JSON
 
-| atributo       | descrição                                                          |
-|:---------------|:-------------------------------------------------------------------|
-| cond_pagto_id  | ID da condição de pagamento                                        |
+| atributo               | descrição                                                                    |
+|:-----------------------|:-----------------------------------------------------------------------------|
+| cond_pagto_id          | ID da condição de pagamento                                                  |
+| data_prev_faturamento  | Data escolhida para o faturamento / entrega (semana: segunda)  YYYY-MM-DDD   |
 
 | header    | descrição                                                          |
 |:----------|:-------------------------------------------------------------------|
