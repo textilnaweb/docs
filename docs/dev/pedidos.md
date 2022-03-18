@@ -33,6 +33,8 @@ Exemplo:
 ```json
 {
   "count": 1,
+  "page": 0,
+  "recspage": 20,
   "pedidos": [
     {
       "id": "c5fe593bde514d0c95b9970ce7220687",
