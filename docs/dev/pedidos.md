@@ -24,6 +24,14 @@ Retorna a lista de pedidos aberos e fechados quye estão associados ao usuáiro 
 
 <tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
 
+Parâmetros query:
+
+| query          | descrição                                                                                                                    |
+|:---------------|:-----------------------------------------------------------------------------------------------------------------------------|
+| q              | Texto de busca para filtrar os produtos                                                                                      |
+| p              | Qual o indice da página                                                                                                      |
+| qtd            | Qtdade de produtos por página. Padrão 20                                                                                     |
+
 ### Resposta
 
 Lista de pedidos
