@@ -30,9 +30,9 @@ Parâmetros query:
 
 | query          | descrição                                                                                                                    |
 |:---------------|:-----------------------------------------------------------------------------------------------------------------------------|
-| q              | Texto de busca para filtrar os produtos                                                                                      |
+| q              | Texto de busca para filtrar o número do pedido                                                                               |
 | p              | Qual o indice da página                                                                                                      |
-| qtd            | Qtdade de produtos por página. Padrão 20                                                                                     |
+| qtd            | Qtdade de pedidos por página. Padrão 20                                                                                      |
 
 
 ### Resposta
