@@ -30,7 +30,7 @@ module.exports = {
                 '/dev/carrinhos.md',
                 '/dev/pedidos.md',
                 '/dev/favoritos.md',
-                '/dev/fabricas.md',
+                '/dev/interesses.md',
                 '/dev/banners.md',
                 '/dev/erros.md',
                 '/dev/utils.html',
