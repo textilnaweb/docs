@@ -40,6 +40,7 @@ Exemplo:
     "verao"
   ],
   "valor": "28.70000",
+  "valor_modo": "avista",
   "info_tecnicas": null,
   "disponivel": 1,
   "cores": {
