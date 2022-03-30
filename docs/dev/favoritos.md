@@ -1,30 +1,92 @@
-# Fabricas
+# Favoritos
 
-## Interesse
+O usuário pode ter uma lista de produtos favoritos na loja, para isso pode ser utilizado os comandos abaixo:
 
-<api method="post" uri="/fabricas" />
+## Listar produtos de favoritos
 
-Registra um novo interesse de uma fabrica em participar da lista de fabrica da Têxtil na Web.
+<api method="get" uri="/favoritos" />
+
+Retorna a lista de produtos marcados como favoritos do usuário.
 
 ### Requisição
 
-Exemplo de JSON de requisição:
-
-```json
-{
-	"nome": "Seu nome completo",
-	"cnpj": "01001001000101",
-	"email": "seu-email@gmail.com",
-	"telefone": "47999991010"	
-}
-```
+| header         | descrição |
+|:---------------|:-----------|
+| sessao_id      | Token da sessao do usuário no front-end. |
 
 ### Resposta
+
+Lista de `produto_id`
 
 Exemplo: 
 
 ```json
-{
-  "status": true
-}
+[
+  "f8f20d6f1v7c4e4b18894bfc377122db2e",
+  "fcb321e61v93d54c6299fbb228c4f5a6b9",
+  "ffceb0ae1v42c34958a224bea9da22db8b"
+]
+```
+
+
+## Marcar como favorito
+
+<api method="put" uri="/favoritos/{pid}" />
+
+Marcar produto id como favorito para o usuário logado
+
+### Requisição
+
+| parametro  | descrição                                     |
+|:-----------|:----------------------------------------------|
+| pid        | ID do produto que será marcado como favorito <Badge text="obrigatório"/> |
+
+| header         | desacrição |
+|:---------------|:-----------|
+| sessao_id      | Token da sessao do usuário no front-end. |
+
+### Resposta
+
+Retorna a nova lista de favoritos do usuário, agora contendo o produto rescém marcado.
+
+Exemplo: 
+
+```json
+[
+  "f8f20d6f1v7c4e4b18894bfc377122db2e",
+  "fcb321e61v93d54c6299fbb228c4f5a6b9",
+  "fe5645b51v45664278bdb594029a9d774f",
+  "ffceb0ae1v42c34958a224bea9da22db8b"
+]
+```
+
+## Desmarcando o produto como favorito
+
+<api method="delete" uri="/favoritos/{pid}" />
+
+Desmarcar um produto id da lista de produtos favoritos do usuário logado.
+
+### Requisição
+
+| parametro  | descrição                                     |
+|:-----------|:----------------------------------------------|
+| pid        | ID do produto que será desmarcado como favorito <Badge text="obrigatório"/> |
+
+| header         | desacrição |
+|:---------------|:-----------|
+| sessao_id      | Token da sessao do usuário no front-end. |
+
+
+### Resposta
+
+Retorna a nova lista de favoritos do usuário, agora sem o produto rescém desmarcado.
+
+Exemplo: 
+
+```json
+[
+  "fcb321e61v93d54c6299fbb228c4f5a6b9",
+  "fe5645b51v45664278bdb594029a9d774f",
+  "ffceb0ae1v42c34958a224bea9da22db8b"
+]
 ```
