@@ -32,6 +32,7 @@ Parâmetros query:
 | ped            | Busca pelo numero de um pedido específico                                                                                    |
 | p              | Qual o indice da página                                                                                                      |
 | qtd            | Qtdade de pedidos por página. Padrão 20                                                                                      |
+| filtro         | Opção de pré-filtros: `do_mes`, `da_semana`, `arquivados`                                                                    |
 
 ### Resposta
 
