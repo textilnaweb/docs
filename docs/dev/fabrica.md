@@ -31,6 +31,7 @@ Parâmetros query:
 | query          | descrição                                                                                                                    |
 |:---------------|:-----------------------------------------------------------------------------------------------------------------------------|
 | q              | Texto de busca para filtrar o número do pedido                                                                               |
+| ped            | Busca pelo numero de um pedido específico                                                                                    |
 | p              | Qual o indice da página                                                                                                      |
 | qtd            | Qtdade de pedidos por página. Padrão 20                                                                                      |
 
