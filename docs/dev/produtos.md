@@ -113,6 +113,8 @@ Registrar interesse do usuário pelo produto específico para que a plataforma a
 
 ### Requisição
 
+<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
+
 | parametro  | descrição                                     |
 |:-----------|:----------------------------------------------|
 | pid        | ID do produto <Badge text="obrigatório"/>     |
