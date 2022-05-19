@@ -105,7 +105,7 @@ Exemplo:
 > O flag **etiqueta.etiqueca_fabrica** determina se a etiqueta é a própria marca da fabrica. Para evitar logo duplicada.
 
 
-## Registrar interesse do usuáiro
+## Registrar interesse do usuário
 
 <api method="post" uri="/produtos/{pid}/interessado" />
 
