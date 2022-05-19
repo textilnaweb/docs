@@ -1,12 +1,12 @@
-# Detalhe do produto
+# Produto
 
-Carregar informações detalhadas de um produto específico.
+Ações de um produto específico.
 
 ## Carregar produto
 
 <api method="get" uri="/produtos/{pid}" />
 
-Carregar o detalhe de um produto.
+Carregar informações detalhadas de um produto específico.
 
 ### Requisição
 
@@ -103,3 +103,31 @@ Exemplo:
 ```
 
 > O flag **etiqueta.etiqueca_fabrica** determina se a etiqueta é a própria marca da fabrica. Para evitar logo duplicada.
+
+
+## Registrar interesse do usuáiro
+
+<api method="post" uri="/produtos/{pid}/interessado" />
+
+Registrar interesse do usuário pelo produto específico para que a plataforma avise quando novamente estiver o produto disponível.
+
+### Requisição
+
+| parametro  | descrição                                     |
+|:-----------|:----------------------------------------------|
+| pid        | ID do produto <Badge text="obrigatório"/>     |
+
+
+### Resposta
+
+Resposta do registro do interesse:
+
+Exemplo:
+
+```json
+{
+  "status": true,
+  "interesse_id": "e58f7e2d5ad04d0f92ef55c4d11e140b",
+  "reinteresse": false
+}
+```
