@@ -43,6 +43,7 @@ Exemplo:
   "valor_modo": "avista",
   "info_tecnicas": null,
   "disponivel": 1,
+  "tempo_escassez": "2022-05-23T22:00:00.000Z",
   "cores": {
     "sortidas": true,
     "opcoes": [ "branco","preto" ]
