@@ -114,3 +114,29 @@ Após confirmado o e-mail do cadastro, será retornado um JSON com o nome e e-ma
     "apelido": "Como usuario quer ser chamado"
 }
 ```
+
+
+## Reenviar token para validar e-mail
+
+<api method="post" uri="/novo-usuario/reenviar-token" />
+
+Para que seja reenviado um novo token de validação do e-mail do usuário.
+
+### Requisição
+
+Em formato JSON
+
+| atributo  | descrição                                                                                         |
+|:----------|:--------------------------------------------------------------------------------------------------|
+| email     | E-mail que pretende ser validado para o usuário. <Badge text="obrigatório"/>               |
+
+
+### Resposta
+
+```json
+{
+	"email"  : "seu-email@gmail.com",
+	"nome"   : "Seu nome completo",
+    "apelido": "Como usuario quer ser chamado"
+}
+```
