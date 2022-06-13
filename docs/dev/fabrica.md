@@ -293,3 +293,44 @@ Para ser cancelado um pedido deve ser informado:
 
  - **motivo** (motivo) Opção do motivo do cancelamento. (Lista pré definida).
  - **justificativa** (justificativa) Texto com a justificativa do cancelamento.
+
+
+ ## Arquivar pedido
+
+<api method="put" uri="/fabrica/pedidos/{pnum}/arquivar" />
+
+Arquivar um pedido.
+
+### Requisição
+
+<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
+
+### Resposta
+
+Exemplo: 
+
+```json
+{
+    "status" : true,
+}
+```
+
+## Desarquivar pedido
+
+<api method="put" uri="/fabrica/pedidos/{pnum}/desarquivar" />
+
+Desarquivar um pedido.
+
+### Requisição
+
+<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
+
+### Resposta
+
+Exemplo: 
+
+```json
+{
+    "status" : true,
+}
+```

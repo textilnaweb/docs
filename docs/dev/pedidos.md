@@ -225,3 +225,42 @@ Exemplo:
   ]
 }
 ```
+## Arquivar pedido
+
+<api method="put" uri="/pedidos/{pnum}/arquivar" />
+
+Arquivar um pedido.
+
+### Requisição
+
+<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
+
+### Resposta
+
+Exemplo: 
+
+```json
+{
+    "status" : true,
+}
+```
+
+## Desarquivar pedido
+
+<api method="put" uri="/pedidos/{pnum}/desarquivar" />
+
+Desarquivar um pedido.
+
+### Requisição
+
+<tag text="auth" type="error"/> Somente deve ser executado essa rota sobre um `access_token`.
+
+### Resposta
+
+Exemplo: 
+
+```json
+{
+    "status" : true,
+}
+```
