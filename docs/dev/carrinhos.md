@@ -47,8 +47,11 @@ Exemplo:
       "nome": "30 dias",
       "prazo_medio": 30,
       "qtd_parcelas": 1,
-      "created_at": "2021-05-05T14:03:18.000Z",
-      "updated_at": "2021-05-05T14:03:18.000Z"
+    },
+    "forma_pagto": {
+      "id": "4290e43ac00f472c9dc31e7284298335",
+      "codigo": "PIX",
+      "nome": "PIX",
     },
     "cliente": {},
     "fabrica": {
@@ -71,8 +74,6 @@ Exemplo:
       "telefone_cel": null,
       "situacao": "atv",
       "ultima_venda": null,
-      "created_at": "2021-02-15T19:52:30.000Z",
-      "updated_at": "2021-02-15T19:52:30.000Z"
     },
     "colecao": {
       "valor_ped_min": 100,
@@ -87,8 +88,6 @@ Exemplo:
       "vig_venda_ini": "2020-01-01",
       "vig_venda_fim": "2021-12-31",
       "tabela_cores": "[{\"nome\":\"preto\",\"hex\":\"#000000\"},{\"nome\":\"branco\",\"hex\":\"#FFFFFF\"},{\"nome\":\"vemelho\",\"hex\":\"#FF0000\"}]",
-      "created_at": "2021-02-15T19:59:27.000Z",
-      "updated_at": "2021-02-15T19:59:27.000Z"
     },
     "etiqueta": {
       "logo": "https://api.netforcews.com/thumbnail/s3.sa-east-1/static.textilnaweb.com/logos/fabrica-marca.png",
@@ -96,8 +95,6 @@ Exemplo:
       "fabrica_id": "b8c2ac28245b4579bb149806070bdde8",
       "nome": "marca",
       "slug": "fabrica-marca",
-      "created_at": "2021-02-15T19:52:33.000Z",
-      "updated_at": "2021-02-15T19:52:33.000Z"
     },
     "qtdade_total": 9,
     "valor_itens": 341.91,
@@ -159,7 +156,24 @@ Exemplo:
             "codigo": "001",
             "nome": "30 dias",
             "prazo_medio": 30,
-            "qtd_parcelas": 1
+            "qtd_parcelas": 1,
+            "formas": [
+                {
+                    "id": "4290e43ac00f472c9dc31e7284298331",
+                    "codigo": "BOL",
+                    "nome": "Boleto",
+                },
+                {
+                    "id": "4290e43ac00f472c9dc31e7284298332",
+                    "codigo": "PIX",
+                    "nome": "PIX",
+                },
+                {
+                    "id": "4290e43ac00f472c9dc31e7284298311",
+                    "codigo": "CRC",
+                    "nome": "Cartão de Crédito",
+                }
+            ]
         }
     ],    
     "data_min_para_entrega": "2021-10-23"
@@ -292,6 +306,7 @@ Em formato JSON
 | atributo               | descrição                                                                    |
 |:-----------------------|:-----------------------------------------------------------------------------|
 | cond_pagto_id          | ID da condição de pagamento                                                  |
+| forma_pagto_id         | ID da forma de pagamento                                                     |
 | data_prev_faturamento  | Data escolhida para o faturamento / entrega (semana: segunda)  YYYY-MM-DDD   |
 
 | header    | descrição                                                          |

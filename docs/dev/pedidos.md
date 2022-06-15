@@ -56,8 +56,11 @@ Exemplo:
         "nome": "30 dias",
         "prazo_medio": 30,
         "qtd_parcelas": 1,
-        "created_at": "2021-05-05T14:03:18.000Z",
-        "updated_at": "2021-05-05T14:03:18.000Z"
+      },
+      "forma_pagto": {
+        "id": "4290e43ac00f472c9dc31e7284298311",
+        "codigo": "PIX",
+        "nome": "PIX",
       },
       "cliente": {
         "id": "bc3ffb08088e4efea5007bcdbfb794ec",
@@ -73,8 +76,6 @@ Exemplo:
         "telefone_com": "992624953",
         "telefone_cel": "988044953",
         "ultima_compra": null,
-        "created_at": "2021-02-16T03:47:47.000Z",
-        "updated_at": "2021-04-13T12:01:22.000Z",
         "usuario": {
           "fuso": -3,
           "id": "fb939d05de4e47cfab2dc58c4271c66d",
@@ -85,8 +86,6 @@ Exemplo:
           "lang": "pt_br",
           "ultimo_login": "2021-02-17T06:59:08.000Z",
           "ultimo_senha": "2021-02-22T19:11:00.000Z",
-          "created_at": "2021-02-16T03:47:47.000Z",
-          "updated_at": "2021-04-28T17:23:02.000Z"
         },
         "endereco": {
           "id": "cab9d837ebdc4107b4ba5fc378ab033e",
@@ -105,8 +104,6 @@ Exemplo:
           "municipio_id": "53b230479a9c40db95c9189674343c66",
           "municipio_codigo": "4202404",
           "referencia": "Fundos",
-          "created_at": "2021-02-16T03:47:50.000Z",
-          "updated_at": "2021-04-28T17:23:59.000Z"
         }
       },
       "fabrica": {
@@ -129,8 +126,6 @@ Exemplo:
         "telefone_cel": null,
         "situacao": "atv",
         "ultima_venda": null,
-        "created_at": "2021-03-19T17:13:58.000Z",
-        "updated_at": "2021-03-19T17:13:58.000Z"
       },
       "colecao": {
         "valor_ped_min": 100,
@@ -159,8 +154,6 @@ Exemplo:
         "vig_venda_ini": "2020-01-01",
         "vig_venda_fim": "2021-12-31",
         "tabela_cores": "[{\"nome\":\"preto\",\"hex\":\"#000000\"},{\"nome\":\"branco\",\"hex\":\"#FFFFFF\"},{\"nome\":\"vemelho\",\"hex\":\"#FF0000\"}]",
-        "created_at": "2021-03-19T17:27:19.000Z",
-        "updated_at": "2021-03-19T17:27:19.000Z"
       },
       "etiqueta": {
         "logo": "https://static.textilnaweb.com/logos/fabrica-marca.png",
@@ -169,8 +162,6 @@ Exemplo:
         "nome": "marca",
         "slug": "fabrica-marca",
         "etiqueca_fabrica": false,
-        "created_at": "2021-03-19T17:13:59.000Z",
-        "updated_at": "2021-03-19T17:13:59.000Z"
       },
       "qtdade_total": 550,
       "valor_itens": 14239.5,
