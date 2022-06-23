@@ -169,6 +169,10 @@ Exemplo:
       "data_pedido": "2021-06-15T14:25:29.000Z",
       "data_prev_faturamento": "2021-05-05T14:30:52.000Z",
       "data_cancelamento": "2021-06-15T14:32:16.000Z",
+      "arquivado": {
+        "cliente": false,
+        "fabrica": false
+      },
       "etapas": [
         {
           "legenda": "pedido",
